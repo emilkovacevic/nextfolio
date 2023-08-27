@@ -1,9 +1,13 @@
 module.exports = {
-  endOfLine: "auto",
+  endOfLine: "es5",
   arrowParens: "always",
-  trailingComma: "es5",
-  semi: true,
-  useTabs: false,
-  singleQuote: false,
-  bracketSpacing: true,
+  trailingComma: "none",
+  semi: false,
+  singleQuote: true,
+  arrowBodyStyle: "off",
+  preferArrowCallback: "off",
+  bracketSpacing: false,
+  printWidth: 80,
+  tabWidth: 2
 };
+
