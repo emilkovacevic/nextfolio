@@ -4,67 +4,68 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
+    --background: 0 0% 98%; /* Slight off-white for the background */
+    --foreground: 210 20% 20%; /* Gentle blueish gray for the foreground text */
+  
+    --card: 0 0% 95%; /* A slightly darker shade for cards than the main background */
+    --card-foreground: 210 20% 15%; /* Text on the card */
+  
+    --popover: 0 0% 93%; /* A shade darker than the card for popovers */
+    --popover-foreground: 210 20% 12%; /* Text on the popover */
+  
+    --primary: 142.1 76.2% 36.3%; /* Keeping your primary greenish hue */
+    --primary-foreground: 142, 85%, 24%; /* Keeping your primary text shade */
+  
+    --secondary: 240 15% 85%; /* Lighter blue for secondary elements */
+    --secondary-foreground: 240 20% 40%; /* Darker text for secondary elements */
+  
+    --muted: 0 0% 90%; /* Muted backgrounds for less important elements */
+    --muted-foreground: 210 15% 30%; /* Gentle foreground for muted elements */
+  
+    --accent: 280 40% 60%; /* An accent color, chose a purple hue */
+    --accent-foreground: 280 45% 25%; /* Darker text for accent elements */
+  
+    --destructive: 0 84.2% 60.2%; /* Keeping your red destructive hue */
+    --destructive-foreground: 0 0% 98%; /* Almost white text for destructive elements */
+  
+    --border: 240 10% 80%; /* Border color, lighter than the main elements */
+    --input: 0 0% 96%; /* Almost white input fields for better contrast */
+    --ring: 142.1 76.2% 36.3%; /* Keeping your primary for rings */
+    --radius: rem; /* Keeping the radius value */
   }
- 
+  
+   
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 20 14% 8%;  /* Dark gray background */
+    --foreground: 0 0% 85%;   /* Light text for general contrast */
+  
+    --card: 24 10% 15%;       /* A bit brighter than the background for pop-out */
+    --card-foreground: 0 0% 80%; /* Slightly dimmer text on the card for balance */
+  
+    --popover: 24 10% 13%;    /* Just a shade darker than cards for subtle popovers */
+    --popover-foreground: 0 0% 82%; /* Light text on the popover */
+  
+    --primary: 142.1 70% 50%; /* Brighter version of your primary for pop in dark mode */
+    --primary-foreground: 145 80% 20%; /* Dark text on primary elements for legibility */
+  
+    --secondary: 240 10% 30%; /* Muted blue for secondary elements */
+    --secondary-foreground: 0 0% 75%;  /* Brighter text for secondary elements */
+  
+    --muted: 20 15% 12%;      /* Muted elements, slightly different from background */
+    --muted-foreground: 210 10% 50%; /* Muted blueish text for less emphasis */
+  
+    --accent: 12 45% 25%;     /* Using a reddish accent to pop out in dark mode */
+    --accent-foreground: 0 0% 80%; /* Bright text on accent elements */
+  
+    --destructive: 0 65% 40%; /* Brighter version of your red for noticeability in dark mode */
+    --destructive-foreground: 0 0% 90%; /* Almost white text for destructive elements */
+  
+    --border: 240 10% 25%;    /* Border color, a muted shade to frame elements */
+    --input: 24 10% 17%;      /* Input fields a shade different from cards for distinction */
+    --ring: 142.1 70% 45%;    /* Slightly brighter primary shade for rings */
   }
-}
+}  
+  
  
 @layer base {
   * {
