@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
+import { AOSInit } from '@/lib/aos'
 
 const monserrat = Montserrat({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={monserrat.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <AOSInit />
           <div className="flex flex-wrap min-h-screen bg-background text-foreground">
             <Navbar />
             <div className="container self-center md:pl-20 md:pr-20 grow">

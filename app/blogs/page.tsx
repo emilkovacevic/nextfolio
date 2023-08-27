@@ -1,14 +1,17 @@
 const page = () => {
   return (
-    <main className="min-h-screen p-6 bg-background text-foreground">
+    <main
+      data-aos="fade-up"
+      className="min-h-screen p-6 bg-background text-foreground"
+    >
       <div className="container px-4 mx-auto md:px-0">
-        {/* <!-- Header: Blogs --> */}
+        {/*  Header: Blogs  */}
         <div className="mb-8 text-center">
           <h1 className="text-5xl font-bold">Blogs</h1>
           <p className="text-xl text-secondary">Thoughts, ideas, and stories</p>
         </div>
 
-        {/* <!-- Blog Post 1 --> */}
+        {/*  Blog Post 1  */}
         <div className="p-8 mb-6 rounded-md shadow-lg bg-card">
           <h2 className="mb-4 text-3xl font-semibold">Blog Post Title 1</h2>
           <p className="mb-4">
@@ -23,7 +26,7 @@ const page = () => {
           </a>
         </div>
 
-        {/* <!-- Blog Post 2 --> */}
+        {/*  Blog Post 2  */}
         <div className="p-8 mb-6 rounded-md shadow-lg bg-card">
           <h2 className="mb-4 text-3xl font-semibold">Blog Post Title 2</h2>
           <p className="mb-4">

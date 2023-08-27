@@ -1,14 +1,17 @@
 const page = () => {
   return (
-    <main className="min-h-screen p-6 bg-background text-foreground">
+    <main
+      data-aos="fade-up"
+      className="min-h-screen p-6 bg-background text-foreground"
+    >
       <div className="container px-4 mx-auto md:px-0">
-        {/* <!-- Header: Name & Title --> */}
+        {/*  Header: Name & Title  */}
         <div className="mb-8 text-center">
           <h1 className="text-5xl font-bold">John Doe</h1>
           <p className="text-xl text-secondary">Full Stack Developer</p>
         </div>
 
-        {/* <!-- Basic Info --> */}
+        {/*  Basic Info  */}
         <div className="mb-8">
           <h2 className="mb-4 text-3xl font-semibold">Basic Information</h2>
           <p>Email: johndoe@example.com</p>
@@ -18,7 +21,7 @@ const page = () => {
           <p>GitHub: github.com/johndoe</p>
         </div>
 
-        {/* <!-- Education --> */}
+        {/*  Education  */}
         <div className="mb-8">
           <h2 className="mb-4 text-3xl font-semibold">Education</h2>
 
@@ -33,7 +36,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* <!-- Skills --> */}
+        {/*  Skills  */}
         <div className="mb-8">
           <h2 className="mb-4 text-3xl font-semibold">Skills</h2>
 
@@ -46,7 +49,7 @@ const page = () => {
           </ul>
         </div>
 
-        {/* <!-- Work Experience --> */}
+        {/*  Work Experience  */}
         <div className="mb-8">
           <h2 className="mb-4 text-3xl font-semibold">Work Experience</h2>
 

@@ -18,7 +18,7 @@ const LINKS = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground">
+    <nav className="fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50">
       <TooltipProvider>
         <ul className="flex items-center w-screen gap-6 md:w-fit justify-evenly md:flex-col">
           {LINKS.map((link) => (
