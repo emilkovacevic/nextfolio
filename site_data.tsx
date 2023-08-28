@@ -44,11 +44,12 @@ export const HOME_PAGE_DATA = {
       value: 'johndoe@example.com',
       link: 'mailto:johndoe@example.com'
     },
-    { type: 'Phone', value: '+123 456 7890', link: 'tel:+1234567890' },
+    { type: 'Phone', value: '+1212 456 7890', link: 'tel:+1234567890' },
     {
       type: 'Address',
-      value: '123 Main St, City, Country 12345',
-      link: 'https://www.google.com/maps...'
+      value:
+        '123 East 123th Street, Murray Hill, New York, NY 10016, United States',
+      link: 'https://www.google.com/maps/place/New+York,+NY,+USA/@40.7726383,-73.9919548,14z/data=!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu.'
     }
   ],
   actions: [
@@ -141,7 +142,7 @@ const PROJECT_DESC =
   "Description of the project, what it does, who it's for, and any other pertinent details. This should provide an overview to anyone unfamiliar with the project's purpose or functionality."
 
 export const PROJECT_PAGE_DATA = {
-  heading: 'Projects',
+  heading: 'My Projects',
   subheading: 'Showcase of my work',
 
   projects: [

@@ -55,7 +55,9 @@ const Navbar = () => {
                       currentPath === link.path
                         ? 'text-accent-foreground'
                         : 'text-inherit'
-                    }`}
+                    }
+                    hover:text-accent-foreground focus:text-accent-foreground
+                    `}
                     href={link.path}
                   >
                     {link.icon}
@@ -64,7 +66,7 @@ const Navbar = () => {
                 <TooltipContent
                   className={`{
                   ${isNavLeft ? ' md:left-10' : ' md:right-10'}
-                  absolute right-[-50%] md:right-0 translate-x-[50%] bottom-10 md:translate-x-0 md:bottom-0 md:translate-y-[100%]  w-fit
+                  absolute translate-x-[50%] bottom-10 md:translate-x-0 md:bottom-0 md:translate-y-[100%]  w-fit
                   `}
                 >
                   <p>{link.name}</p>
@@ -88,6 +90,7 @@ const Navbar = () => {
           <li className="hidden md:block">
             <Button
               variant="link"
+              className="hover:text-accent-foreground focus:text-accent-foreground"
               onClick={() => setIsNavLeft((prev) => !prev)}
             >
               <FlipHorizontal2 />

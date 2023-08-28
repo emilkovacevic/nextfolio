@@ -4,7 +4,7 @@
  
 @layer base {
   :root {
-    --background: 0 0% 98%; /* Slight off-white for the background */
+    --background: 0 0% 95%; /* Slight off-white for the background */
     --foreground: 210 20% 20%; /* Gentle blueish gray for the foreground text */
   
     --card: 0 0% 100%; /* A slightly darker shade for cards than the main background */
@@ -52,7 +52,7 @@
     --secondary-foreground: 0 0% 75%;  /* Brighter text for secondary elements */
   
     --muted: 20 15% 12%;      /* Muted elements, slightly different from background */
-    --muted-foreground: 210 10% 50%; /* Muted blueish text for less emphasis */
+    --muted-foreground: 210 10% 67%; /* Muted blueish text for less emphasis */
   
     --accent: 130 36% 17%;     /* Using a reddish accent to pop out in dark mode */
     --accent-foreground: 32 89% 50%; /* Bright text on accent elements */

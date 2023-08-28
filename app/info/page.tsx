@@ -20,14 +20,12 @@ const page = () => {
             alt={PROFILE_PAGE_DATA.name}
             className="object-cover rounded-t md:w-1/3 h-80 w-fit"
           />
-          <div className="grid content-center p-4 md:w-2/3">
+          <div className="grid content-center px-6 md:w-2/3">
             <div>
               <h2 className="my-2 text-4xl font-bold">
                 {PROFILE_PAGE_DATA.name}
               </h2>
-              <p className="my-2 text-2xl text-muted-foreground">
-                {PROFILE_PAGE_DATA.title}
-              </p>
+              <h3 className="my-2 text-2xl">{PROFILE_PAGE_DATA.title}</h3>
               <p className="text-xl text-muted-foreground">
                 {PROFILE_PAGE_DATA.message}
               </p>
