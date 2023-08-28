@@ -157,15 +157,6 @@
 
   }
   
-  /* We need to remove this custom cursor in mobile devices */
-  @media screen and (max-width: 768px) {
-    .flare {
-      width: 0;
-      height: 0;
-      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
-        opacity 0.2s ease-in-out;
-    }
-  }
   .flare.pointer {
     opacity: 0 !important;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -184,4 +175,19 @@
       box-shadow: 0 0 0 0 rgba(240, 102, 102, 0);
     }
   }
+
+    @media (hover: none) {
+      /* Hide default cursor */
+      * {
+        cursor: none !important;
+      }
+    
+      /* Hide custom cursor */
+      .flare {
+        width: 0;
+        height: 0;
+        opacity: 0 !important;
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+      }
+    }
 }

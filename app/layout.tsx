@@ -7,6 +7,7 @@ import { AOSInit } from '@/lib/aos'
 import ClientOnly from '@/components/ClientOnly'
 import { ProgressBar } from '@/components/ProgressBar'
 import FlareCursor from '@/components/Cursor'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 const monserrat = Montserrat({ subsets: ['latin'] })
 
@@ -30,6 +31,7 @@ export default function RootLayout({
               <FlareCursor />
               <ProgressBar />
               <Navbar />
+              <ScrollToTopButton />
             </ClientOnly>
             <div className="container self-center p-2 md:pl-20 md:pr-20 grow">
               {children}

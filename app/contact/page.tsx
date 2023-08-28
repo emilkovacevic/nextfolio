@@ -14,39 +14,39 @@ const page = () => {
         />
 
         {/*  Social Media Links  */}
-        <div className="flex flex-wrap mb-8 justify-evenly">
+        <div className="flex flex-wrap gap-2 mb-8 justify-evenly">
           <a
             href={CONTACT_PAGE_DATA.facebook}
-            className="m-2 md:text-2xl"
+            className="md:text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="flex gap-2">
               {' '}
               <Facebook />
-              <span>Facebook</span>
+              <span className="hidden sm:inline-block">Facebook</span>
             </div>
           </a>
           <a
             href={CONTACT_PAGE_DATA.instagram}
-            className="m-2 md:text-2xl"
+            className="md:text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="flex gap-2">
               <Instagram />
-              <span>Instagram</span>
+              <span className="hidden sm:inline-block">Instagram</span>
             </div>
           </a>
           <a
             href={CONTACT_PAGE_DATA.linkedin}
-            className="m-2 md:text-2xl"
+            className="md:text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="flex gap-2">
               <Linkedin />
-              <span>LinkedIn</span>
+              <span className="hidden sm:inline-block">LinkedIn</span>
             </div>
           </a>
         </div>
