@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Briefcase, Home, Newspaper, Send, User2 } from 'lucide-react'
 import {
   Tooltip,
@@ -17,8 +20,9 @@ const LINKS = [
 ]
 
 const Navbar = () => {
+  const currentPath = usePathname()
   return (
-    <nav className="fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50">
+    <nav className="fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50 md:shadow-md">
       <TooltipProvider>
         <ul className="flex items-center w-screen gap-6 md:w-fit justify-evenly md:flex-col">
           {LINKS.map((link) => (
@@ -28,9 +32,18 @@ const Navbar = () => {
             >
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href={link.path}>{link.icon}</Link>
+                  <Link
+                    className={`${
+                      currentPath === link.path
+                        ? 'text-accent-foreground'
+                        : 'text-inherit'
+                    }`}
+                    href={link.path}
+                  >
+                    {link.icon}
+                  </Link>
                 </TooltipTrigger>
-                <TooltipContent className="absolute left-10">
+                <TooltipContent className="absolute right-[-50%] md:right-0 translate-x-[50%] md:translate-x-0 md:left-10 bottom-10 md:bottom-0 md:translate-y-[100%]  w-fit">
                   <p>{link.name}</p>
                 </TooltipContent>
               </Tooltip>

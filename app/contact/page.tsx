@@ -1,19 +1,16 @@
+import PageHeader from '@/components/PageHeader'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
 
 const page = () => {
   return (
-    <main
-      data-aos="fade-up"
-      className="min-h-screen p-6 bg-background text-foreground"
-    >
+    <main className="min-h-screen p-6 bg-background text-foreground">
       <div className="container px-4 mx-auto md:px-0">
         {/*  Header: Contact Me  */}
-        <div className="mb-8 text-center">
-          <h1 className="text-5xl font-bold">Contact Me</h1>
-          <p className="text-xl text-secondary">
-            I&apos;d love to hear from you!
-          </p>
-        </div>
+        <PageHeader
+          heading="Contact Me"
+          subheading=" I'd love to hear from you!"
+        />
+
         {/*  Social Media Links  */}
         <div className="flex flex-wrap mb-8 justify-evenly">
           <a
