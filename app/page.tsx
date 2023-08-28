@@ -13,7 +13,7 @@ export default function Home() {
             data-aos="fade-down"
             className="relative flex max-w-2xl mb-4 text-xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl text-secondary-foreground"
           >
-            <span className="block h-[1px] w-full bg-accent absolute -translate-x-full -left-2 top-[50%] overflow-hidden" />
+            <span className="block h-[1px] w-full bg-accent-foreground absolute -translate-x-full -left-2 top-[50%] overflow-hidden" />
             Hi, I&apos;m
             <span className="ml-2" />
             {HOME_PAGE_DATA.name.map((char) => (
