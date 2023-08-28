@@ -33,10 +33,20 @@ const ContactForm = () => {
     }
   })
 
+  const {
+    formState: { errors },
+    reset
+  } = form
+
   function onSubmit(values: FormValues) {
     // Here, handle the form submission to your server or any other logic you want
     // eslint-disable-next-line no-alert
-    alert(JSON.stringify(values))
+    alert(`Form data: ${JSON.stringify(values)}`)
+    reset({
+      name: '',
+      email: '',
+      message: ''
+    })
   }
 
   return (
@@ -56,6 +66,9 @@ const ContactForm = () => {
                   className="w-full p-2 border rounded-md"
                 />
               </FormControl>
+              {errors.name?.message && (
+                <p className="text-destructive">{errors.name?.message}</p>
+              )}
             </FormItem>
           )}
         />
@@ -74,6 +87,9 @@ const ContactForm = () => {
                   className="w-full p-2 border rounded-md"
                 />
               </FormControl>
+              {errors.email?.message && (
+                <p className="text-destructive">{errors.email?.message}</p>
+              )}
             </FormItem>
           )}
         />
@@ -91,6 +107,9 @@ const ContactForm = () => {
                   className="w-full p-2 border rounded-md"
                 />
               </FormControl>
+              {errors.message?.message && (
+                <p className="text-destructive">{errors.message?.message}</p>
+              )}
             </FormItem>
           )}
         />

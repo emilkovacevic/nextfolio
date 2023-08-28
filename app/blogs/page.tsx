@@ -14,13 +14,13 @@ const page = () => {
         />
 
         {/*  Blog Posts  */}
-        <main className="flex flex-wrap gap-4 my-10">
+        <main className="flex flex-wrap items-stretch gap-4 my-10">
           {BLOG_PAGE_DATA.blogs.map((post) => (
             <section
               key={post.id}
               data-aos="fade-up"
               data-aos-once="true"
-              className="max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg "
+              className="flex flex-col max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg"
             >
               <Image
                 className="w-full h-80"
@@ -30,7 +30,7 @@ const page = () => {
                 height={250}
               />
 
-              <div className="flex flex-col justify-between p-4 text-xl ">
+              <div className="flex flex-col justify-between p-4 ">
                 <h2 className="mb-4 text-3xl font-semibold">{post.title}</h2>
 
                 <div>
@@ -41,7 +41,7 @@ const page = () => {
                 </div>
                 <Link
                   href="blog_post_link_1.html"
-                  className="py-2 text-center text-primary hover:underline"
+                  className="pt-2 text-center text-primary hover:underline"
                 >
                   Read More
                 </Link>
