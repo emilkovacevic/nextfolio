@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className="min-h-screen p-6 bg-background text-foreground">
+    <div className="min-h-screen py-6 bg-background text-foreground">
       <PageHeader
         heading={PROFILE_PAGE_DATA.heading}
         subheading={PROFILE_PAGE_DATA.subheading}

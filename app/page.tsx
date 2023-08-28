@@ -86,6 +86,7 @@ export default function Home() {
           className="hidden lg:mt-0 lg:col-span-5 lg:flex"
         >
           <Image
+            className="w-auto h-auto"
             width={400}
             height={400}
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"

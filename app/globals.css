@@ -13,8 +13,8 @@
     --popover: 0 0% 93%; /* A shade darker than the card for popovers */
     --popover-foreground: 210 20% 12%; /* Text on the popover */
   
-    --primary: 142.1 76.2% 36.3%; /* Keeping your primary greenish hue */
-    --primary-foreground: 142, 85%, 64%; /* Keeping your primary text shade */
+    --primary: 240 80% 50%; 
+    --primary-foreground: 0, 0%, 100%; 
   
     --secondary: 240 15% 85%; /* Lighter blue for secondary elements */
     --secondary-foreground: 240 20% 40%; /* Darker text for secondary elements */
@@ -30,7 +30,7 @@
   
     --border: 240 10% 80%; /* Border color, lighter than the main elements */
     --input: 0 0% 96%; /* Almost white input fields for better contrast */
-    --ring: 142.1 76.2% 36.3%; /* Keeping your primary for rings */
+    --ring: 240 76.2% 36.3%; 
     --radius: rem; /* Keeping the radius value */
   }
   
@@ -45,8 +45,8 @@
     --popover: 24 10% 13%;    /* Just a shade darker than cards for subtle popovers */
     --popover-foreground: 0 0% 82%; /* Light text on the popover */
   
-    --primary: 142.1 70% 50%; /* Brighter version of your primary for pop in dark mode */
-    --primary-foreground: 145 80% 20%; /* Dark text on primary elements for legibility */
+    --primary: 240 50% 60%; 
+    --primary-foreground: 240 80% 20%; 
   
     --secondary: 240 10% 30%; /* Muted blue for secondary elements */
     --secondary-foreground: 0 0% 75%;  /* Brighter text for secondary elements */
@@ -62,7 +62,8 @@
   
     --border: 240 10% 25%;    /* Border color, a muted shade to frame elements */
     --input: 24 10% 17%;      /* Input fields a shade different from cards for distinction */
-    --ring: 142.1 70% 45%;    /* Slightly brighter primary shade for rings */
+     
+    --ring: 240 70% 45%;
   }
 }  
  

@@ -130,8 +130,6 @@ export const PROFILE_PAGE_DATA = {
 export const CONTACT_PAGE_DATA = {
   heading: 'Contact Me',
   subheading: "I'd love to hear from you!",
-  // configure email on:
-  email_to: '',
   embedded_location:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253385478!2d144.95373531589768!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af1176e6ed%3A0x4cb637568d8857e2!2sFlinders%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1630091720135!5m2!1sen!2sus',
   facebook: 'https://facebook.com/your_username',

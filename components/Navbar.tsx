@@ -1,8 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import useLocalStorage from '@/hooks/useLocalStorage'
 import { usePathname } from 'next/navigation'
-import { Briefcase, Home, Newspaper, Send, User2 } from 'lucide-react'
+import {
+  Briefcase,
+  FlipHorizontal2,
+  Home,
+  Newspaper,
+  Send,
+  User2
+} from 'lucide-react'
 import {
   Tooltip,
   TooltipContent,
@@ -10,6 +18,7 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip'
 import { ThemeToggle } from './ThemeToggle'
+import { Button } from './ui/button'
 
 const LINKS = [
   { name: 'Home', path: '/', icon: <Home size={20} /> },
@@ -21,8 +30,17 @@ const LINKS = [
 
 const Navbar = () => {
   const currentPath = usePathname()
+  const [isNavLeft, setIsNavLeft] = useLocalStorage<boolean>(
+    'navbarLeft',
+    false
+  )
+
   return (
-    <nav className="fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50 md:shadow-md">
+    <nav
+      className={`
+    ${isNavLeft ? 'left-0' : 'right-0'}
+    fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50 md:shadow-md`}
+    >
       <TooltipProvider>
         <ul className="flex items-center w-screen gap-6 md:w-fit justify-evenly md:flex-col">
           {LINKS.map((link) => (
@@ -43,12 +61,20 @@ const Navbar = () => {
                     {link.icon}
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent className="absolute right-[-50%] md:right-0 translate-x-[50%] md:translate-x-0 md:left-10 bottom-10 md:bottom-0 md:translate-y-[100%]  w-fit">
+                <TooltipContent
+                  className={`{
+                  ${isNavLeft ? ' md:left-10' : ' md:right-10'}
+                  absolute right-[-50%] md:right-0 translate-x-[50%] bottom-10 md:translate-x-0 md:bottom-0 md:translate-y-[100%]  w-fit
+                  `}
+                >
                   <p>{link.name}</p>
                 </TooltipContent>
               </Tooltip>
             </li>
           ))}
+          <li className="hidden md:block">
+            <hr className="px-4 py-[1px] bg-border" />
+          </li>
           <li>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -58,6 +84,14 @@ const Navbar = () => {
                 <p>Change Colors</p>
               </TooltipContent>
             </Tooltip>
+          </li>
+          <li className="hidden md:block">
+            <Button
+              variant="link"
+              onClick={() => setIsNavLeft((prev) => !prev)}
+            >
+              <FlipHorizontal2 />
+            </Button>
           </li>
         </ul>
       </TooltipProvider>

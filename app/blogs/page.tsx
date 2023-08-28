@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <div className="min-h-screen p-6">
+    <div className="min-h-screen py-6">
       <div className="container px-4 mx-auto md:px-0">
         {/*  Header: Blogs  */}
         <PageHeader
@@ -14,13 +14,13 @@ const page = () => {
         />
 
         {/*  Blog Posts  */}
-        <main className="flex flex-wrap gap-4">
+        <main className="flex flex-wrap gap-4 my-10">
           {BLOG_PAGE_DATA.blogs.map((post) => (
             <section
               key={post.id}
               data-aos="fade-up"
               data-aos-once="true"
-              className="max-w-sm overflow-hidden rounded shadow-md bg-card hover:shadow-lg "
+              className="max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg "
             >
               <Image
                 className="w-full h-80"
