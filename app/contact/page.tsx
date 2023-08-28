@@ -57,7 +57,7 @@ const page = () => {
         </div>
 
         {/*  Google Maps Embed  */}
-        <div className="mb-12">
+        <div>
           <iframe
             title="location"
             src={CONTACT_PAGE_DATA.embedded_location}

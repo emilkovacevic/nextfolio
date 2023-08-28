@@ -135,7 +135,7 @@
 
   /* Cursor styles */
   * {
-    cursor: none !important;
+    cursor: none;
   }
   .flare {
     position: fixed;
@@ -158,7 +158,7 @@
   }
   
   .flare.pointer {
-    opacity: 0 !important;
+    opacity: 0;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
 
@@ -179,14 +179,14 @@
     @media (hover: none) {
       /* Hide default cursor */
       * {
-        cursor: none !important;
+        cursor: default;
       }
     
       /* Hide custom cursor */
       .flare {
         width: 0;
         height: 0;
-        opacity: 0 !important;
+        opacity: 0;
         transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
       }
     }
