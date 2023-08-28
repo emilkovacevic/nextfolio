@@ -23,7 +23,7 @@ const page = () => {
             {/*  Projects  */}
             {PROJECT_PAGE_DATA.projects.map((project) => (
               <Link
-                className="p-8 text-center transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
+                className="pt-2 text-center transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
                 key={project.id}
                 href={`/project/${project.name}`}
               >
