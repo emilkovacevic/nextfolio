@@ -1,43 +1,56 @@
 import PageHeader from '@/components/PageHeader'
+import { BLOG_PAGE_DATA } from '@/site_data'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const page = () => {
   return (
-    <main className="min-h-screen p-6 bg-background text-foreground">
+    <div className="min-h-screen p-6">
       <div className="container px-4 mx-auto md:px-0">
         {/*  Header: Blogs  */}
-        <PageHeader heading="Blogs" subheading="Thoughts, ideas, and stories" />
+        <PageHeader
+          heading={BLOG_PAGE_DATA.heading}
+          subheading={BLOG_PAGE_DATA.subheading}
+        />
 
-        {/*  Blog Post 1  */}
-        <div className="p-8 mb-6 rounded-md shadow-lg bg-card">
-          <h2 className="mb-4 text-3xl font-semibold">Blog Post Title 1</h2>
-          <p className="mb-4">
-            A short introduction or excerpt of the first blog post. This gives
-            readers an idea about what to expect from the full post.
-          </p>
-          <a
-            href="blog_post_link_1.html"
-            className="text-primary hover:underline"
-          >
-            Read More
-          </a>
-        </div>
+        {/*  Blog Posts  */}
+        <main className="flex flex-wrap gap-4">
+          {BLOG_PAGE_DATA.blogs.map((post) => (
+            <section
+              key={post.id}
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="max-w-sm overflow-hidden rounded shadow-md bg-card hover:shadow-lg "
+            >
+              <Image
+                className="w-full h-80"
+                src={post.image}
+                alt={post.title}
+                width={450}
+                height={250}
+              />
 
-        {/*  Blog Post 2  */}
-        <div className="p-8 mb-6 rounded-md shadow-lg bg-card">
-          <h2 className="mb-4 text-3xl font-semibold">Blog Post Title 2</h2>
-          <p className="mb-4">
-            An intro for the second blog post. Each of these can be different
-            lengths, but providing a teaser can entice readers to click through.
-          </p>
-          <a
-            href="blog_post_link_2.html"
-            className="text-primary hover:underline"
-          >
-            Read More
-          </a>
-        </div>
+              <div className="flex flex-col justify-between p-4 text-xl ">
+                <h2 className="mb-4 text-3xl font-semibold">{post.title}</h2>
+
+                <div>
+                  <span className="block mb-2 grow text-muted-foreground text-md">
+                    Published on: {post.published_on}
+                  </span>
+                  <p className="mb-4">{post.description}</p>
+                </div>
+                <Link
+                  href="blog_post_link_1.html"
+                  className="py-2 text-center text-primary hover:underline"
+                >
+                  Read More
+                </Link>
+              </div>
+            </section>
+          ))}
+        </main>
       </div>
-    </main>
+    </div>
   )
 }
 
