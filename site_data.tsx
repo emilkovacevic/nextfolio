@@ -62,7 +62,7 @@ export const HOME_PAGE_DATA = {
     {
       id: 'act2',
       label: 'Learn more',
-      link: '/info',
+      link: '/about',
       icon: <MoveRight />
     }
   ],
