@@ -1,3 +1,4 @@
+import CurriculumVitae from '@/components/CurriculumVitae'
 import PageHeader from '@/components/PageHeader'
 import Swipper from '@/components/Swipper'
 import { PROFILE_PAGE_DATA, TESTIMONIALS_DATA } from '@/site_data'
@@ -12,20 +13,23 @@ const page = () => {
       />
       <main>
         {/* Profile Card */}
-        <div className="flex flex-wrap pb-4 rounded shadow-lg bg-card">
-          <Image
-            width={800}
-            height={450}
-            src={PROFILE_PAGE_DATA.image}
-            alt={PROFILE_PAGE_DATA.name}
-            className="object-cover rounded-t md:w-1/3 h-80 w-fit"
-          />
+        <div className="flex flex-wrap rounded shadow-lg bg-card">
+          <div className="md:w-1/3">
+            <Image
+              width={800}
+              height={450}
+              src={PROFILE_PAGE_DATA.image}
+              alt={PROFILE_PAGE_DATA.name}
+              className="object-cover rounded-tl-sm h-80 w-fit"
+            />
+            <CurriculumVitae />
+          </div>
           <div className="grid content-center px-6 md:w-2/3">
             <div>
               <h2 className="my-2 text-4xl font-bold">
                 {PROFILE_PAGE_DATA.name}
               </h2>
-              <h3 className="my-2 text-2xl">{PROFILE_PAGE_DATA.title}</h3>
+              <h1 className="my-2 text-2xl">{PROFILE_PAGE_DATA.title}</h1>
               <p className="text-xl text-muted-foreground">
                 {PROFILE_PAGE_DATA.message}
               </p>
@@ -48,7 +52,7 @@ const page = () => {
                 </a>
               </p>
               <p>
-                Phone:
+                Phone:{' '}
                 <a
                   href={`tel:${PROFILE_PAGE_DATA.contact.phone}`}
                   target="_blank"
@@ -59,7 +63,7 @@ const page = () => {
                 </a>
               </p>
               <p>
-                Location:
+                Location:{' '}
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${PROFILE_PAGE_DATA.contact.location}`}
                   target="_blank"
@@ -70,7 +74,7 @@ const page = () => {
                 </a>
               </p>
               <p>
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   href={PROFILE_PAGE_DATA.contact.linkedIn}
                   target="_blank"
@@ -81,7 +85,7 @@ const page = () => {
                 </a>
               </p>
               <p>
-                GitHub:
+                GitHub:{' '}
                 <a
                   href={PROFILE_PAGE_DATA.contact.gitHub}
                   target="_blank"
