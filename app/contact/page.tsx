@@ -52,7 +52,7 @@ const page = () => {
         </div>
 
         {/*  Contact Form  */}
-        <div className="p-8 mb-6 rounded-md shadow-lg bg-card">
+        <div className="p-2 mb-6 rounded-md shadow-lg md:p-8 bg-card">
           <ContactForm />
         </div>
 
