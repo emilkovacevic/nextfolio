@@ -28,14 +28,14 @@ const page = () => {
           className="w-full h-[450px] my-10"
         />
       </div>
-      <p>
+      <p data-aos="fade-right" className="mb-4">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
         corrupti quae perspiciatis ex, at molestiae eos eaque inventore! Nobis
         vero laudantium, deleniti reprehenderit et sed soluta placeat velit?
         Excepturi, ea?
       </p>
 
-      <div className="mt-8">
+      <div>
         <h2 data-aos="fade-up" className="my-10 text-2xl font-semibold">
           Featured Content
         </h2>
@@ -47,11 +47,11 @@ const page = () => {
                 alt={card.title}
                 width={800}
                 height={450}
-                className="w-full h-72"
+                className="w-full h-80"
               />
-              <div className="absolute top-0 left-0 flex flex-col justify-center w-full h-full text-center align-middle bg-black/60">
-                <h3 className="mt-4 text-xl font-medium">{card.title}</h3>
-                <p className="mt-2">{card.description}</p>
+              <div className="absolute px-[10%] top-0 left-0 flex flex-col justify-center w-full h-full text-center align-middle bg-accent/60 text-primary-foreground">
+                <h3 className="mt-4 text-xl font-bold">{card.title}</h3>
+                <p className="mt-2 font-semibold">{card.description}</p>
               </div>
             </div>
           ))}

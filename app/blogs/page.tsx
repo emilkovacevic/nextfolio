@@ -23,6 +23,7 @@ const page = () => {
               className="flex flex-col max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg"
             >
               <Image
+                data-aos="fade-right"
                 className="w-full h-80"
                 src={post.image}
                 alt={post.title}

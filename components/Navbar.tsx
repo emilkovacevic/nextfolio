@@ -65,8 +65,8 @@ const Navbar = () => {
                 </TooltipTrigger>
                 <TooltipContent
                   className={`{
-                  ${isNavLeft ? ' md:left-10' : ' md:right-10'}
-                  absolute translate-x-[50%] bottom-10 md:translate-x-0 md:bottom-0 md:translate-y-[100%]  w-fit
+                  ${isNavLeft ? ' md:left-10 md:right:0' : ' md:right-10'}
+                  absolute translate-x-[50%] bottom-10 md:translate-x-0 md:bottom-0 md:translate-y-[100%] right-0  w-fit
                   `}
                 >
                   <p>{link.name}</p>

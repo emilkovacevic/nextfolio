@@ -143,7 +143,7 @@ const page = () => {
           <Swipper>
             {TESTIMONIALS_DATA.map((data) => (
               <div
-                className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+                className="max-w-screen-xl px-[10%] py-8 mx-auto text-center lg:py-16 lg:px-6"
                 key={data.id}
               >
                 <figure className="max-w-screen-md mx-auto">
