@@ -5,7 +5,7 @@ import { HOME_PAGE_DATA } from '@/site_data'
 
 export default function Home() {
   return (
-    <main className="grid max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <main className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
       <div className="mr-auto place-self-center lg:col-span-7">
         {/* Render Introduction */}
         <h2
@@ -93,8 +93,8 @@ export default function Home() {
           className="w-auto h-auto"
           width={400}
           height={400}
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-          alt="mockup"
+          src={HOME_PAGE_DATA.hero_image}
+          alt={HOME_PAGE_DATA.hero_image_alt}
         />
       </div>
     </main>

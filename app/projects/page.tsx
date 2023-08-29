@@ -23,19 +23,19 @@ const page = () => {
             {/*  Projects  */}
             {PROJECT_PAGE_DATA.projects.map((project) => (
               <Link
-                className="pt-2 text-center transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
+                className="p-4 transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
                 key={project.id}
-                href={`/project/${project.name}`}
+                href={`/projects/${project.title}`}
               >
                 {/* Image Section */}
-                <h2 className="my-4 text-lg md:text-2xl">{project.name}</h2>
                 <Image
                   src={project.image}
-                  alt={project.name}
-                  width={500}
-                  height={500}
-                  className="w-full rounded-md h-72"
+                  alt={project.title}
+                  width={800}
+                  height={450}
+                  className="w-full h-56 rounded-md"
                 />
+                <h2 className="mt-4 text-lg md:text-2xl">{project.title}</h2>
               </Link>
             ))}
           </div>

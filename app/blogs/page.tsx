@@ -40,7 +40,7 @@ const page = () => {
                   <p className="mb-4">{post.description}</p>
                 </div>
                 <Link
-                  href="blog_post_link_1.html"
+                  href="blogs/blog_post_link_1.html"
                   className="pt-2 text-center text-primary hover:underline"
                 >
                   Read More

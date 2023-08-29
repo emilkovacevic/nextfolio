@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import AnimatedCursor from 'react-animated-cursor'
 
 interface ClientOnly {
   children: React.ReactNode
@@ -15,7 +16,19 @@ const ClientOnly = ({ children }: ClientOnly) => {
 
   if (!clientMounted) return null
 
-  return <div>{children}</div>
+  return (
+    <div>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={33}
+        color="255, 160, 1"
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.2}
+      />
+      {children}
+    </div>
+  )
 }
 
 export default ClientOnly

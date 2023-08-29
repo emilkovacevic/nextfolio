@@ -6,7 +6,6 @@ import { ThemeProvider } from '@/lib/theme-provider'
 import { AOSInit } from '@/lib/aos'
 import ClientOnly from '@/components/ClientOnly'
 import { ProgressBar } from '@/components/ProgressBar'
-import FlareCursor from '@/components/Cursor'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 const monserrat = Montserrat({ subsets: ['latin'] })
@@ -28,7 +27,6 @@ export default function RootLayout({
           <AOSInit />
           <div className="relative flex flex-wrap min-h-screen ">
             <ClientOnly>
-              <FlareCursor />
               <ProgressBar />
               <Navbar />
               <ScrollToTopButton />

@@ -3,9 +3,9 @@ import { MoveRight } from 'lucide-react'
 export const HOME_PAGE_DATA = {
   name: [
     { id: 1, letter: 'J' },
-    { id: 2, letter: 'O' },
-    { id: 3, letter: 'H' },
-    { id: 4, letter: 'N' }
+    { id: 2, letter: 'o' },
+    { id: 3, letter: 'h' },
+    { id: 4, letter: 'n' }
   ],
   role: [
     {
@@ -32,7 +32,8 @@ export const HOME_PAGE_DATA = {
         { id: 6, letter: 'O' },
         { id: 7, letter: 'P' },
         { id: 8, letter: 'E' },
-        { id: 9, letter: 'R' }
+        { id: 9, letter: 'R' },
+        { id: 10, letter: '.' }
       ]
     }
   ],
@@ -64,7 +65,10 @@ export const HOME_PAGE_DATA = {
       link: '/info',
       icon: <MoveRight />
     }
-  ]
+  ],
+  hero_image:
+    'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png',
+  hero_image_alt: 'web developer cover'
 }
 
 export const PROFILE_PAGE_DATA = {
@@ -150,7 +154,7 @@ export const PROJECT_PAGE_DATA = {
       id: 1,
       image:
         'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1055&q=80',
-      name: 'Project Name 1',
+      title: 'Project Name 1',
       description: PROJECT_DESC,
       tags: ['E-commerce', 'Platform', 'Website']
     },
@@ -158,7 +162,7 @@ export const PROJECT_PAGE_DATA = {
       id: 2,
       image:
         'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
-      name: 'Project Name 2',
+      title: 'Project Name 2',
       description: PROJECT_DESC,
       tags: ['Personal', 'Studio', 'Gallery']
     },
@@ -166,7 +170,7 @@ export const PROJECT_PAGE_DATA = {
       id: 3,
       image:
         'https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
-      name: 'Project Name 3',
+      title: 'Project Name 3',
       description: PROJECT_DESC,
       tags: ['System', 'Design', 'Server']
     },
@@ -174,7 +178,7 @@ export const PROJECT_PAGE_DATA = {
       id: 4,
       image:
         'https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
-      name: 'Project Name 4',
+      title: 'Project Name 4',
       description: PROJECT_DESC,
       tags: ['Web', 'Design', 'Art']
     }
@@ -299,3 +303,54 @@ export const TESTIMONIALS_DATA = [
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
   }
 ]
+
+export const ARTICLE_DATA = {
+  author: {
+    name: 'Victor Katanski',
+    image:
+      'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+  },
+  title: 'My Amazing Article',
+  sections: [
+    {
+      id: 'section-1',
+      title: 'First Subtitle',
+      paragraph:
+        'This is the first paragraph of the article. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
+      image:
+        'https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60'
+    },
+    {
+      id: 'section-2',
+      title: 'Second Subtitle',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
+      image:
+        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    },
+    {
+      id: 'section-3',
+      title: 'Third Subtitle',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a r sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Dr sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
+      image:
+        'https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    }
+  ],
+  links: [
+    {
+      id: 'link-1',
+      url: 'link1'
+    },
+    {
+      id: 'link-2',
+      url: 'link2'
+    },
+    {
+      id: 'link-3',
+      url: 'link3'
+    }
+  ],
+  tags: ['tech', 'tutorial', 'react'],
+  publishDate: 'August 28, 2023'
+}

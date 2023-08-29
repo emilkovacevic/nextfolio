@@ -22,7 +22,7 @@ import { Button } from './ui/button'
 
 const LINKS = [
   { name: 'Home', path: '/', icon: <Home size={20} /> },
-  { name: 'Info', path: '/info', icon: <User2 size={20} /> },
+  { name: 'About', path: '/about', icon: <User2 size={20} /> },
   { name: 'Projects', path: '/projects', icon: <Briefcase size={20} /> },
   { name: 'Blogs', path: '/blogs', icon: <Newspaper size={20} /> },
   { name: 'Contact', path: '/contact', icon: <Send size={20} /> }
@@ -39,14 +39,14 @@ const Navbar = () => {
     <nav
       className={`
     ${isNavLeft ? 'left-0' : 'right-0'}
-    fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] p-2 md:rounded bg-card text-card-foreground z-50 md:shadow-md`}
+    fixed bottom-0 md:bottom-auto md:top-[50vh] md:translate-y-[-50%] md:rounded bg-card text-card-foreground z-50 md:shadow-md`}
     >
       <TooltipProvider>
-        <ul className="flex items-center w-screen gap-6 md:w-fit justify-evenly md:flex-col">
+        <ul className="flex items-center w-screen gap-6 py-2 pl-3 md:pl-0 md:pt-3 md:w-fit justify-evenly md:flex-col">
           {LINKS.map((link) => (
             <li
               key={link.name}
-              className="relative p-2 group hover:cursor-pointer text-primary"
+              className="relative group hover:cursor-pointer text-primary"
             >
               <Tooltip>
                 <TooltipTrigger asChild>

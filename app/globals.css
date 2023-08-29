@@ -1,87 +1,93 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 95%; /* Slight off-white for the background */
     --foreground: 210 20% 20%; /* Gentle blueish gray for the foreground text */
-  
+
     --card: 0 0% 100%; /* A slightly darker shade for cards than the main background */
     --card-foreground: 210 20% 15%; /* Text on the card */
-  
+
     --popover: 0 0% 93%; /* A shade darker than the card for popovers */
     --popover-foreground: 210 20% 12%; /* Text on the popover */
-  
-    --primary: 240 80% 50%; 
-    --primary-foreground: 0, 0%, 100%; 
-  
+
+    --primary: 240 80% 50%;
+    --primary-foreground: 0, 0%, 100%;
+
     --secondary: 240 15% 85%; /* Lighter blue for secondary elements */
     --secondary-foreground: 240 20% 40%; /* Darker text for secondary elements */
-  
+
     --muted: 0 0% 90%; /* Muted backgrounds for less important elements */
     --muted-foreground: 210 15% 30%; /* Gentle foreground for muted elements */
-  
-    --accent: 130 36% 17%;  /* An accent color, chose a purple hue */
+
+    --accent: 130 36% 17%; /* An accent color, chose a purple hue */
     --accent-foreground: 32 89% 50%; /* Darker text for accent elements */
-  
+
     --destructive: 0 84.2% 60.2%; /* Keeping your red destructive hue */
     --destructive-foreground: 0 0% 98%; /* Almost white text for destructive elements */
-  
+
     --border: 240 10% 80%; /* Border color, lighter than the main elements */
     --input: 0 0% 96%; /* Almost white input fields for better contrast */
-    --ring: 240 76.2% 36.3%; 
+    --ring: 240 76.2% 36.3%;
     --radius: rem; /* Keeping the radius value */
   }
-  
-   
+
   .dark {
-    --background: 20 14% 8%;  /* Dark gray background */
-    --foreground: 0 0% 85%;   /* Light text for general contrast */
-  
-    --card: 24 10% 15%;       /* A bit brighter than the background for pop-out */
+    --background: 20 14% 8%; /* Dark gray background */
+    --foreground: 0 0% 85%; /* Light text for general contrast */
+
+    --card: 24 10% 15%; /* A bit brighter than the background for pop-out */
     --card-foreground: 0 0% 80%; /* Slightly dimmer text on the card for balance */
-  
-    --popover: 24 10% 13%;    /* Just a shade darker than cards for subtle popovers */
+
+    --popover: 24 10% 13%; /* Just a shade darker than cards for subtle popovers */
     --popover-foreground: 0 0% 82%; /* Light text on the popover */
-  
-    --primary: 240 50% 60%; 
-    --primary-foreground: 240 80% 20%; 
-  
+
+    --primary: 240 50% 60%;
+    --primary-foreground: 240 80% 20%;
+
     --secondary: 240 10% 30%; /* Muted blue for secondary elements */
-    --secondary-foreground: 0 0% 75%;  /* Brighter text for secondary elements */
-  
-    --muted: 20 15% 12%;      /* Muted elements, slightly different from background */
+    --secondary-foreground: 0 0% 75%; /* Brighter text for secondary elements */
+
+    --muted: 20 15% 12%; /* Muted elements, slightly different from background */
     --muted-foreground: 210 10% 67%; /* Muted blueish text for less emphasis */
-  
-    --accent: 130 36% 17%;     /* Using a reddish accent to pop out in dark mode */
+
+    --accent: 130 36% 17%; /* Using a reddish accent to pop out in dark mode */
     --accent-foreground: 32 89% 50%; /* Bright text on accent elements */
-  
+
     --destructive: 0 65% 40%; /* Brighter version of your red for noticeability in dark mode */
     --destructive-foreground: 0 0% 90%; /* Almost white text for destructive elements */
-  
-    --border: 240 10% 25%;    /* Border color, a muted shade to frame elements */
-    --input: 24 10% 17%;      /* Input fields a shade different from cards for distinction */
-     
+
+    --border: 240 10% 25%; /* Border color, a muted shade to frame elements */
+    --input: 24 10% 17%; /* Input fields a shade different from cards for distinction */
+
     --ring: 240 70% 45%;
   }
-}  
- 
+}
+
 @layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
 
   /* Home page styles */
   .zoom-in-out {
-    animation: textInOutAnimation 1s ease-in-out
+    animation: textInOutAnimation 1s ease-in-out;
   }
 
   .squize-letter {
-    animation: alphabetAnimation 1s ease-in-out, textColorAnimation 1s ease-in-out;
+    animation:
+      alphabetAnimation 1s ease-in-out,
+      textColorAnimation 1s ease-in-out;
   }
 
   @keyframes alphabetAnimation {
@@ -132,62 +138,4 @@
       transform: scale(1, 1);
     }
   }
-
-  /* Cursor styles */
-  * {
-    cursor: none;
-  }
-  .flare {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    scale: 0.75;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #f06, #9f6);
-    transform: translate(-50%, -50%); /* center the cursor on the mouse position */
-    pointer-events: none; /* ensure the cursor doesn't interfere with interactions */
-    z-index: 9999;
-    mix-blend-mode: difference; /* allows the cursor to blend in with the background */
-    animation: pulseEffect 1.5s infinite;
-    border: 2px solid #4c00fc;
-    backdrop-filter: blur(1px);
-    background-color: #000000cb;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-    will-change: width, height, opacity;
-
-  }
-  
-  .flare.pointer {
-    opacity: 0;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  }
-
-  @keyframes pulseEffect {
-    0% {
-      box-shadow: 0 0 0 0 rgba(240, 102, 102, 0.7);
-    }
-    
-    70% {
-      box-shadow: 0 0 0 10px rgba(240, 102, 102, 0);
-    }
-    
-    100% {
-      box-shadow: 0 0 0 0 rgba(240, 102, 102, 0);
-    }
-  }
-
-    @media (hover: none) {
-      /* Hide default cursor */
-      * {
-        cursor: default;
-      }
-    
-      /* Hide custom cursor */
-      .flare {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-      }
-    }
 }
