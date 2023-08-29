@@ -41,17 +41,19 @@ const page = () => {
         </h2>
         <Swipper>
           {PROJECT_PAGE_DATA.projects.map((card) => (
-            <div key={card.id} data-aos="fade-up" className="relative mx-auto">
-              <Image
-                src={card.image}
-                alt={card.title}
-                width={800}
-                height={450}
-                className="w-full h-80"
-              />
-              <div className="absolute px-[10%] top-0 left-0 flex flex-col justify-center w-full h-full text-center align-middle bg-accent/60 text-primary-foreground">
-                <h3 className="mt-4 text-xl font-bold">{card.title}</h3>
-                <p className="mt-2 font-semibold">{card.description}</p>
+            <div key={card.id} data-aos="fade-up" className="pb-10 mx-auto">
+              <div className="relative">
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  width={800}
+                  height={450}
+                  className="w-full h-80"
+                />
+                <div className="absolute top-0 left-0 z-30 bottom-10 flex flex-col justify-center w-full h-full px-[10%] bg-black/60 text-primary-foreground ">
+                  <h3 className="mt-4 text-xl font-bold">{card.title}</h3>
+                  <p className="mt-2 font-semibold">{card.description}</p>
+                </div>
               </div>
             </div>
           ))}

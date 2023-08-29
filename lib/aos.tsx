@@ -8,7 +8,8 @@ export const AOSInit = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      delay: 100
+      delay: 100,
+      once: true,
     })
   }, [])
 
