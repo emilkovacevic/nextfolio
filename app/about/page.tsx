@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className="min-h-screen py-6 bg-background text-foreground">
+    <div className="min-h-screen py-6">
       <PageHeader
         heading={PROFILE_PAGE_DATA.heading}
         subheading={PROFILE_PAGE_DATA.subheading}
       />
       <main>
         {/* Profile Card */}
-        <div className="flex flex-wrap rounded shadow-lg bg-card">
+        <div className="flex flex-wrap pb-4 rounded shadow-lg bg-card">
           <Image
             width={800}
             height={450}

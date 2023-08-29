@@ -5,8 +5,8 @@ import ContactForm from '@/components/ContactForm'
 
 const page = () => {
   return (
-    <main className="min-h-screen py-6 bg-background text-foreground">
-      <div className="container px-4 mx-auto md:px-0">
+    <main className="min-h-screen py-6">
+      <div className="mx-auto md:px-0">
         {/*  Header: Contact Me  */}
         <PageHeader
           heading={CONTACT_PAGE_DATA.heading}

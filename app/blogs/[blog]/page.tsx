@@ -8,7 +8,7 @@ const page = () => {
   const dateNow = new Date()
   formatDate(dateNow)
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col tracking-wider lg:flex-row">
       {/* Sidebar */}
       <aside className="w-full p-4 lg:w-1/4">
         <div className="sticky space-y-2 top-4">

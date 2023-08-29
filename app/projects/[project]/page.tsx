@@ -4,35 +4,24 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <main className="mx-auto">
+    <main className="max-w-4xl mx-auto tracking-wider">
       <h1 data-aos="fade-right" className="mb-4 text-3xl font-bold">
-        My project
+        {PROJECT_PAGE_DATA.projects[0].title}
       </h1>
       <p data-aos="fade-left" className="mb-4">
-        A detailed description about my project goes here. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Impedit commodi facere illo, quam
-        mollitia suscipit architecto perspiciatis eveniet voluptatum
-        exercitationem, voluptatem ad blanditiis obcaecati necessitatibus porro
-        laboriosam praesentium omnis cupiditate. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Impedit commodi facere illo, quam mollitia
-        suscipit architecto perspiciatis eveniet voluptatum exercitationem,
-        voluptatem ad blanditiis obcaecati necessitatibus porro laboriosam
-        praesentium omnis cupiditate.
+        {PROJECT_PAGE_DATA.projects[0].description}
       </p>
       <div data-aos="zoom-in">
         <Image
-          src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+          src={PROJECT_PAGE_DATA.projects[0].image}
           alt="cover photo"
           width={800}
           height={450}
-          className="w-full h-[450px] my-10"
+          className="w-full h-[450px] my-10 object-cover"
         />
       </div>
       <p data-aos="fade-right" className="mb-4">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-        corrupti quae perspiciatis ex, at molestiae eos eaque inventore! Nobis
-        vero laudantium, deleniti reprehenderit et sed soluta placeat velit?
-        Excepturi, ea?
+        {PROJECT_PAGE_DATA.projects[0].description}
       </p>
 
       <div>
@@ -50,8 +39,8 @@ const page = () => {
                   height={450}
                   className="w-full h-80"
                 />
-                <div className="absolute top-0 left-0 z-30 bottom-10 flex flex-col justify-center w-full h-full px-[10%] bg-black/60 text-primary-foreground ">
-                  <h3 className="mt-4 text-xl font-bold">{card.title}</h3>
+                <div className="absolute top-0 left-0 z-30 bottom-10 flex flex-col justify-center w-full h-full px-[10%] bg-black/60 text-white ">
+                  <h3 className="mt-4 text-xl font-bold">Feature {card.id}</h3>
                   <p className="mt-2 font-semibold">{card.description}</p>
                 </div>
               </div>

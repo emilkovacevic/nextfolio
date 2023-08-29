@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <div className="min-h-screen py-6 bg-background text-foreground">
+    <div className="min-h-screen py-6">
       {/*  Header: Projects  */}
       <PageHeader
         heading={PROJECT_PAGE_DATA.heading}
@@ -13,7 +13,7 @@ const page = () => {
       />
 
       <main>
-        <div className="container mx-auto md:px-0">
+        <div className="mx-auto  md:p-6">
           {/* Grid Layout for Projects */}
           <div
             className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"

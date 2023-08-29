@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 const ContactLoader = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen">
       <div className="container px-4 mx-auto md:px-0">
         {/*  Header: Contact Me  */}
         <div className="mb-8 text-center">
