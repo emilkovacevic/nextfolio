@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { HOME_PAGE_DATA } from '@/site_data'
+import TagsCloud from '@/components/TagsCloud'
 
 export default function Home() {
   return (
@@ -89,13 +89,7 @@ export default function Home() {
         data-aos="fade-left"
         className="hidden lg:mt-0 lg:col-span-5 lg:flex"
       >
-        <Image
-          className="w-auto h-auto object-fit"
-          width={893}
-          height={893}
-          src={HOME_PAGE_DATA.hero_image}
-          alt={HOME_PAGE_DATA.hero_image_alt}
-        />
+        <TagsCloud tags={HOME_PAGE_DATA.hero_tags} />
       </div>
     </main>
   )

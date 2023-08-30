@@ -66,9 +66,18 @@ export const HOME_PAGE_DATA = {
       icon: <MoveRight />
     }
   ],
-  hero_image:
-    'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png',
-  hero_image_alt: 'web developer cover'
+  hero_tags: [
+    'Pro',
+    'Developer',
+    'Responsive',
+    'Angular',
+    'React',
+    'API',
+    'PhotoShop',
+    'Architect',
+    'Art',
+    'Git'
+  ]
 }
 
 export const PROFILE_PAGE_DATA = {
