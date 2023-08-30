@@ -90,9 +90,9 @@ export default function Home() {
         className="hidden lg:mt-0 lg:col-span-5 lg:flex"
       >
         <Image
-          className="w-auto h-auto"
-          width={400}
-          height={400}
+          className="w-auto h-auto object-fit"
+          width={893}
+          height={893}
           src={HOME_PAGE_DATA.hero_image}
           alt={HOME_PAGE_DATA.hero_image_alt}
         />

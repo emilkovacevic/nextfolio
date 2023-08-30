@@ -26,8 +26,8 @@ const page = () => {
                 className="w-full h-80"
                 src={post.image}
                 alt={post.title}
-                width={450}
-                height={250}
+                width={895}
+                height={552}
               />
 
               <div className="flex flex-col justify-between p-4 ">

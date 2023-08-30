@@ -1,5 +1,16 @@
 import { MoveRight } from 'lucide-react'
 
+// image imports
+import AVATAR from '@/public/images/person.jpg'
+import HOME from '@/public/images/pages/home/hero-1.jpg'
+import PROFILE from '@/public/images/pages/about/profile.jpg'
+import PROJECT from '@/public/images/pages/projects/project-1.jpg'
+import PROJECT_SLIDE from '@/public/images/pages/projects/project-slide.jpg'
+import BLOGPOST from '@/public/images/pages/blogs/blog-post-1.jpg'
+
+const PROJECT_DESC =
+  "Description of the project, what it does, who it's for, and any other pertinent details. This should provide an overview to anyone unfamiliar with the project's purpose or functionality."
+
 export const HOME_PAGE_DATA = {
   name: [
     { id: 1, letter: 'J' },
@@ -66,16 +77,14 @@ export const HOME_PAGE_DATA = {
       icon: <MoveRight />
     }
   ],
-  hero_image:
-    'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png',
-  hero_image_alt: 'web developer cover'
+  hero_image: HOME,
+  hero_image_alt: 'John'
 }
 
 export const PROFILE_PAGE_DATA = {
   heading: 'About Me',
   subheading: 'Contact info, Work experience, Education',
-  image:
-    'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60',
+  image: PROFILE,
   name: 'John Doe',
   title: 'Full Stack Developer',
   message:
@@ -142,9 +151,6 @@ export const CONTACT_PAGE_DATA = {
   linkedin: 'https://linkedin.com/in/your_username'
 }
 
-const PROJECT_DESC =
-  "Description of the project, what it does, who it's for, and any other pertinent details. This should provide an overview to anyone unfamiliar with the project's purpose or functionality."
-
 export const PROJECT_PAGE_DATA = {
   heading: 'My Projects',
   subheading: 'Showcase of my work',
@@ -152,31 +158,27 @@ export const PROJECT_PAGE_DATA = {
   projects: [
     {
       id: 1,
-      image:
-        'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1055&q=80',
+      image: PROJECT,
       title: 'Project Name 1',
       description: PROJECT_DESC,
       features: [
         {
           id: 1,
-          image:
-            'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 1',
           subtitle: 'Feature 1 for project 1',
           description: PROJECT_DESC
         },
         {
           id: 2,
-          image:
-            'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 2',
           subtitle: 'Feature 2 for project 1',
           description: PROJECT_DESC
         },
         {
           id: 3,
-          image:
-            'https://images.unsplash.com/photo-1571666521805-f5e8423aba9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 3',
           subtitle: 'Feature 3 for project 1',
           description: PROJECT_DESC
@@ -186,31 +188,27 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 2,
-      image:
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      image: PROJECT,
       title: 'Project Name 2',
       description: PROJECT_DESC,
       features: [
         {
           id: 1,
-          image:
-            'https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 1',
           subtitle: 'Feature 1 for project 2',
           description: PROJECT_DESC
         },
         {
           id: 2,
-          image:
-            'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 2',
           subtitle: 'Feature 2 for project 2',
           description: PROJECT_DESC
         },
         {
           id: 3,
-          image:
-            'https://plus.unsplash.com/premium_photo-1661573411127-baedbe62d738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 3',
           subtitle: 'Feature 3 for project 2',
           description: PROJECT_DESC
@@ -220,31 +218,27 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 3,
-      image:
-        'https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+      image: PROJECT,
       title: 'Project Name 3',
       description: PROJECT_DESC,
       features: [
         {
           id: 1,
-          image:
-            'https://images.unsplash.com/photo-1515787366009-7cbdd2dc587b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNyZWF0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 1',
           subtitle: 'Feature 1 for project 3',
           description: PROJECT_DESC
         },
         {
           id: 2,
-          image:
-            'https://images.unsplash.com/photo-1607435656663-3e951f654d5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGNyZWF0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 2',
           subtitle: 'Feature 2 for project 3',
           description: PROJECT_DESC
         },
         {
           id: 3,
-          image:
-            'https://plus.unsplash.com/premium_photo-1663835910976-cc2a4b8a96f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGNyZWF0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 3',
           subtitle: 'Feature 3 for project 3',
           description: PROJECT_DESC
@@ -254,63 +248,33 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 4,
-      image:
-        'https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+      image: PROJECT,
       title: 'Project Name 4',
       description: PROJECT_DESC,
       features: [
         {
           id: 1,
-          image:
-            'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1aWxkfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 1',
           subtitle: 'Feature 1 for project 4',
           description: PROJECT_DESC
         },
         {
           id: 2,
-          image:
-            'https://plus.unsplash.com/premium_photo-1677612031058-e90a2a6c03ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGJ1aWxkfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 2',
           subtitle: 'Feature 2 for project 4',
           description: PROJECT_DESC
         },
         {
           id: 3,
-          image:
-            'https://images.unsplash.com/photo-1522832712787-3fbd36c9fe2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGJ1aWxkfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+          image: PROJECT_SLIDE,
           title: 'Title 3',
           subtitle: 'Feature 3 for project 4',
           description: PROJECT_DESC
         }
       ],
       tags: ['Web', 'Design', 'Art']
-    }
-  ]
-}
-
-export const BLOG_PAGE_DATA = {
-  heading: 'My Blogs',
-  subheading: 'Thoughts, ideas, and stories',
-
-  blogs: [
-    {
-      id: 1,
-      published_on: '7.8.2023',
-      image:
-        'https://images.unsplash.com/photo-1682686581264-c47e25e61d95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60',
-      title: 'Blog Post Title 1',
-      description:
-        'A short introduction or excerpt of the first blog post. This gives readers an idea about what to expect from the full post.'
-    },
-    {
-      id: 2,
-      published_on: '10.10.2023',
-      image:
-        'https://images.unsplash.com/photo-1692970126004-862efac4da0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60',
-      title: 'Blog Post Title 2',
-      description:
-        'An intro for the second blog post. Each of these can be different lengths, but providing a teaser can entice readers to click through.'
     }
   ]
 }
@@ -322,8 +286,7 @@ export const TESTIMONIALS_DATA = [
       "John's ability to grasp complex problems and provide innovative solutions is truly commendable. His dedication and passion for coding are evident in every project he handles.",
     name: 'Joe Smith',
     position: 'Director at Microsoft',
-    imageUrl:
-      'https://plus.unsplash.com/premium_photo-1669882305339-8e2cbb81903e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 2,
@@ -331,8 +294,7 @@ export const TESTIMONIALS_DATA = [
       'John has been a pivotal part of our software development team. His coding skills and dedication to best practices are unmatched.',
     name: 'Robert Williams',
     position: 'CTO at Google',
-    imageUrl:
-      'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 3,
@@ -340,8 +302,7 @@ export const TESTIMONIALS_DATA = [
       "We've worked with John on multiple projects and he never fails to exceed our expectations. He has an uncanny ability to turn ideas into reality.",
     name: 'Amanda Johnson',
     position: 'VP of Engineering at Apple',
-    imageUrl:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 4,
@@ -349,8 +310,7 @@ export const TESTIMONIALS_DATA = [
       "It's rare to find a developer who combines expertise with great communication skills. John is one of those rare finds.",
     name: 'David Taylor',
     position: 'CEO at Dropbox',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 5,
@@ -358,8 +318,7 @@ export const TESTIMONIALS_DATA = [
       "John consistently delivers top-notch code, meets deadlines, and is always eager to take on new challenges. It's a pleasure working with him.",
     name: 'Sam Brown',
     position: 'Product Manager at Spotify',
-    imageUrl:
-      'https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 6,
@@ -367,8 +326,7 @@ export const TESTIMONIALS_DATA = [
       "I've witnessed John tackle intricate problems with ease, and he's a true asset to any development team.",
     name: 'Jenny Green',
     position: 'Senior Developer at Netflix',
-    imageUrl:
-      'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 7,
@@ -376,8 +334,7 @@ export const TESTIMONIALS_DATA = [
       "Every line of code John writes is testament to his profound understanding of programming. He's truly a software artisan.",
     name: 'Natalie White',
     position: 'Tech Lead at Adobe',
-    imageUrl:
-      'https://plus.unsplash.com/premium_photo-1688739352540-a75b102d8551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 8,
@@ -385,8 +342,7 @@ export const TESTIMONIALS_DATA = [
       'Collaborating with John has been an enlightening experience. His approach to coding, combined with his commitment to team goals, is truly inspiring.',
     name: 'Brandon Harris',
     position: 'Engineering Manager at Slack',
-    imageUrl:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 9,
@@ -394,8 +350,7 @@ export const TESTIMONIALS_DATA = [
       'John is the kind of developer who leads by example. His depth of knowledge and relentless work ethic makes him a standout in the software world.',
     name: 'Oliver King',
     position: 'Head of Software at Nvidia',
-    imageUrl:
-      'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   },
   {
     id: 10,
@@ -403,16 +358,38 @@ export const TESTIMONIALS_DATA = [
       'John has the technical prowess and the collaborative spirit that makes projects succeed. I wholeheartedly recommend him for any technical venture.',
     name: 'Maya Lewis',
     position: 'Founder & CEO at Zoom',
-    imageUrl:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
+    imageUrl: AVATAR
   }
 ]
+
+export const BLOG_PAGE_DATA = {
+  heading: 'My Blogs',
+  subheading: 'Thoughts, ideas, and stories',
+
+  blogs: [
+    {
+      id: 1,
+      published_on: '7.8.2023',
+      image: BLOGPOST,
+      title: 'Blog Post Title 1',
+      description:
+        'A short introduction or excerpt of the first blog post. This gives readers an idea about what to expect from the full post.'
+    },
+    {
+      id: 2,
+      published_on: '10.10.2023',
+      image: BLOGPOST,
+      title: 'Blog Post Title 2',
+      description:
+        'An intro for the second blog post. Each of these can be different lengths, but providing a teaser can entice readers to click through.'
+    }
+  ]
+}
 
 export const BLOG_ARTICLE_DATA = {
   author: {
     name: 'Victor Katanski',
-    image:
-      'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+    image: AVATAR
   },
   title: 'My Amazing Article',
   sections: [
@@ -421,24 +398,21 @@ export const BLOG_ARTICLE_DATA = {
       title: 'First Subtitle',
       paragraph:
         'This is the first paragraph of the article. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
-      image:
-        'https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2plY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60'
+      image: BLOGPOST
     },
     {
       id: 'section-2',
       title: 'Second Subtitle',
       paragraph:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
-      image:
-        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+      image: BLOGPOST
     },
     {
       id: 'section-3',
       title: 'Third Subtitle',
       paragraph:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a r sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur! Dr sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!  Omnis corrupti nisi nemo magni quaerat cumque dolorem, illo reprehenderit hic neque. Minus rem impedit veniam ullam, vitae saepe eveniet a pariatur!',
-      image:
-        'https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
+      image: BLOGPOST
     }
   ],
   links: [
@@ -459,5 +433,5 @@ export const BLOG_ARTICLE_DATA = {
     }
   ],
   tags: ['tech', 'tutorial', 'react'],
-  publishDate: 'August 28, 2023'
+  publishDate: '17:32 - 28 08, 2023'
 }

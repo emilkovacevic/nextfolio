@@ -14,17 +14,17 @@ const page = () => {
       <main>
         {/* Profile Card */}
         <div className="flex flex-wrap rounded shadow-lg bg-card">
-          <div className="md:w-1/3">
+          <div className="w-full md:w-1/3">
             <Image
-              width={800}
-              height={450}
+              width={300}
+              height={300}
               src={PROFILE_PAGE_DATA.image}
               alt={PROFILE_PAGE_DATA.name}
-              className="object-cover rounded-tl-sm h-80 w-fit"
+              className="object-cover object-center w-full rounded-tl-sm h-80"
             />
             <CurriculumVitae />
           </div>
-          <div className="grid content-center px-6 md:w-2/3">
+          <div className="grid content-center px-6 my-4 md:w-2/3 md:my-0">
             <div>
               <h2 className="my-2 text-4xl font-bold">
                 {PROFILE_PAGE_DATA.name}

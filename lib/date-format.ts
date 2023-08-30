@@ -5,5 +5,5 @@ export const formatDate = (date: Date) => {
   const MM = String(date.getMonth() + 1).padStart(2, '0')
   const yyyy = date.getFullYear()
 
-  return `${hh} : ${mm} - ${dd} / ${MM} / ${yyyy}`
+  return `${hh}:${mm} - ${dd} ${MM}, ${yyyy}`
 }
