@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation'
 
 const page = () => {
   const headersList = headers()
-  const activePath = headersList.get('x-invoke-path')?.split('/').pop()
+  const activePath = headersList.get('next-url')?.split('/').pop()
   const projectName = decodeURIComponent(activePath || '')
   const project = PROJECT_PAGE_DATA.projects.find(
     (p) => p.title === projectName
