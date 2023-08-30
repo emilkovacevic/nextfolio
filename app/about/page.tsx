@@ -1,7 +1,7 @@
 import CurriculumVitae from '@/components/CurriculumVitae'
 import PageHeader from '@/components/PageHeader'
 import Swipper from '@/components/Swipper'
-import { PROFILE_PAGE_DATA, TESTIMONIALS_DATA } from '@/site_data'
+import { PROFILE_PAGE_DATA, TESTIMONIALS_DATA } from '@/website_data'
 import Image from 'next/image'
 
 const page = () => {

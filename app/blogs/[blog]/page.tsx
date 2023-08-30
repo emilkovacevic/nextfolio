@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { BLOG_ARTICLE_DATA } from '@/site_data'
+import { BLOG_ARTICLE_DATA } from '@/website_data'
 import { formatDate } from '@/lib/date-format'
 import Link from 'next/link'
 

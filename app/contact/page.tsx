@@ -1,6 +1,6 @@
 import PageHeader from '@/components/PageHeader'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
-import { CONTACT_PAGE_DATA } from '@/site_data'
+import { CONTACT_PAGE_DATA } from '@/website_data'
 import ContactForm from '@/components/ContactForm'
 
 const page = () => {

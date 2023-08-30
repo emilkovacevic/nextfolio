@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { HOME_PAGE_DATA } from '@/site_data'
+import { HOME_PAGE_DATA } from '@/website_data'
 import TagsCloud from '@/components/TagsCloud'
 
 export default function Home() {

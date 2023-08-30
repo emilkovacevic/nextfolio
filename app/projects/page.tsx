@@ -1,5 +1,5 @@
 import PageHeader from '@/components/PageHeader'
-import { PROJECT_PAGE_DATA } from '@/site_data'
+import { PROJECT_PAGE_DATA } from '@/website_data'
 import Image from 'next/image'
 import Link from 'next/link'
 

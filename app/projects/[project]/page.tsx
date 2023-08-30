@@ -1,7 +1,8 @@
 import Swipper from '@/components/Swipper'
 import Image from 'next/image'
 import { headers } from 'next/headers'
-import { PROJECT_PAGE_DATA } from '@/site_data'
+import { PROJECT_PAGE_DATA } from '@/website_data'
+import { notFound } from 'next/navigation'
 
 const page = () => {
   const headersList = headers()
@@ -12,7 +13,7 @@ const page = () => {
   )
 
   if (!project) {
-    return <div>Project not found</div>
+    return notFound()
   }
 
   return (
