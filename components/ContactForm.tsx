@@ -4,6 +4,7 @@ import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Input } from '@/components/ui/input'
+import { useToast } from '@/components/ui/use-toast'
 import {
   Form,
   FormControl,
@@ -15,6 +16,7 @@ import { Button } from './ui/button'
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
+  title: z.string().min(3, { message: 'Name must be at least 3 characters.' }),
   email: z.string().email({ message: 'Invalid email format.' }),
   message: z
     .string()
@@ -24,10 +26,12 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>
 
 const ContactForm = () => {
+  const { toast } = useToast()
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
+      title: '',
       email: '',
       message: ''
     }
@@ -40,10 +44,17 @@ const ContactForm = () => {
 
   function onSubmit(values: FormValues) {
     // Here, handle the form submission to your server or any other logic you want
-    // eslint-disable-next-line no-alert
-    alert(`Form data: ${JSON.stringify(values)}`)
+    console.log(`Form data: ${JSON.stringify(values)}`)
+
+    // code to run on sucsessfull message send
+    toast({
+      title: 'Message sent',
+      description:
+        'Thank you for reaching out. I will reply as soon as possible'
+    })
     reset({
       name: '',
+      title: '',
       email: '',
       message: ''
     })
@@ -61,7 +72,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Your name"
                   {...field}
                   className="w-full p-2 border rounded-md"
                 />
@@ -69,6 +80,23 @@ const ContactForm = () => {
               {errors.name?.message && (
                 <p className="text-destructive">{errors.name?.message}</p>
               )}
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="title"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Title</FormLabel>
+              <FormControl>
+                <Input
+                  type="text"
+                  placeholder="Message title"
+                  {...field}
+                  className="w-full p-2 border rounded-md"
+                />
+              </FormControl>
             </FormItem>
           )}
         />
@@ -82,7 +110,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   type="email"
-                  placeholder="johndoe@example.com"
+                  placeholder="email@example.com"
                   {...field}
                   className="w-full p-2 border rounded-md"
                 />

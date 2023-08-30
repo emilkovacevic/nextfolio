@@ -8,6 +8,7 @@ import ClientOnly from '@/components/ClientOnly'
 import { ProgressBar } from '@/components/ProgressBar'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import { Analytics } from '@vercel/analytics/react'
+import { Toaster } from '@/components/ui/toaster'
 
 const monserrat = Montserrat({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
               <ProgressBar />
               <Navbar />
               <ScrollToTopButton />
+              <Toaster />
             </ClientOnly>
             <div className="container self-center p-2 my-12 md:pl-20 md:pr-20 grow">
               {children}
