@@ -11,7 +11,7 @@ const CurriculumVitae = () => {
         <Button
           title="View Curriculum Vitae"
           variant="link"
-          className="w-full font-extrabold h-fit bg-primary text-background"
+          className="w-full font-extrabold h-fit bg-primary dark:text-foreground text-card"
         >
           Curriculum Vitae <DownloadCloud className="mx-2" />
         </Button>
