@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { HOME_PAGE_DATA } from '@/website_data'
 import TagsCloud from '@/components/TagsCloud'
+import { MoveRight } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -73,16 +74,21 @@ export default function Home() {
           data-aos-delay="1200"
           className="flex gap-2 md:gap-4"
         >
-          {/* Render Action Links */}
-          {HOME_PAGE_DATA.actions.map((action) => (
-            <Link
-              key={action.id}
-              href={action.link}
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center border rounded-lg hover:border-accent-foreground text-popover-foreground bg-popover focus:ring-4 focus:ring-primary"
-            >
-              {action.label} {action?.icon}
-            </Link>
-          ))}
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center border rounded-lg hover:border-accent-foreground text-popover-foreground bg-popover focus:ring-4 focus:ring-primary"
+          >
+            Contact Me
+          </Link>
+          <Link
+            href="/about"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center border rounded-lg hover:border-accent-foreground text-popover-foreground bg-popover focus:ring-4 focus:ring-primary"
+          >
+            About me
+            <span className="ml-2">
+              <MoveRight />
+            </span>
+          </Link>
         </div>
       </div>
       <div

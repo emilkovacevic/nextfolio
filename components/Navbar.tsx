@@ -51,6 +51,7 @@ const Navbar = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
+                    aria-label={link.name}
                     className={`${
                       currentPath === link.path
                         ? 'text-accent-foreground'
@@ -89,6 +90,7 @@ const Navbar = () => {
           </li>
           <li className="hidden md:block">
             <Button
+              aria-label="Toggle Navbar Position"
               variant="link"
               className="hover:text-accent-foreground focus:text-accent-foreground"
               onClick={() => setIsNavLeft((prev) => !prev)}

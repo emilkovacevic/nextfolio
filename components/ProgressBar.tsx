@@ -24,6 +24,8 @@ export function ProgressBar() {
 
   return (
     <Progress
+      role="progressbar"
+      aria-hidden
       value={progress}
       className={`${
         !progress ? 'h-0' : 'h-1'

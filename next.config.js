@@ -1,11 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: [
-      'flowbite.s3.amazonaws.com',
-      'images.unsplash.com',
-      'plus.unsplash.com'
+  async headers() {
+    return [
+      {
+        source: '/(.*)', // Applies to all routes
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value:
+              "default-src *; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src *; img-src *; style-src * 'unsafe-inline';"
+          }
+        ]
+      }
     ]
+  },
+  images: {
+    domains: ['images.unsplash.com', 'plus.unsplash.com']
   }
 }
 

@@ -14,7 +14,8 @@ const monserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio Website',
-  description: 'Created by Emil'
+  description: 'Personal portfolio website',
+  keywords: 'next, react, developer, portfolio, design, hire, professional'
 }
 
 export default function RootLayout({

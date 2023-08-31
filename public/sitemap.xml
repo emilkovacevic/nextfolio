@@ -1,0 +1,52 @@
+<!-- Replace https://www.yourwebsite.com/ with your actual website URL. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://www.yourwebsite.com/</loc>
+        <lastmod>2023-08-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://www.yourwebsite.com/about</loc>
+        <lastmod>2023-08-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Projects Page -->
+    <url>
+        <loc>https://www.yourwebsite.com/projects</loc>
+        <lastmod>2023-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sample individual project page -->
+    <url>
+        <loc>https://www.yourwebsite.com/projects/sample-project</loc>
+        <lastmod>2023-08-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog list page -->
+    <url>
+        <loc>https://www.yourwebsite.com/blog</loc>
+        <lastmod>2023-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sample individual blog page -->
+    <url>
+        <loc>https://www.yourwebsite.com/blog/sample-blog-post</loc>
+        <lastmod>2023-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
