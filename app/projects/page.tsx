@@ -23,7 +23,7 @@ const page = () => {
             {/*  Projects  */}
             {PROJECT_PAGE_DATA.projects.map((project) => (
               <Link
-                className="p-4 transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
+                className="p-4 m-1 transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
                 key={project.id}
                 href={`/projects/${project.title}`}
               >
@@ -34,7 +34,7 @@ const page = () => {
                   alt={project.title}
                   width={800}
                   height={450}
-                  className="object-cover w-full h-full rounded-md max-h-96"
+                  className="object-cover w-full rounded-md h-fit "
                 />
                 <h2 className="mt-4 text-lg md:text-2xl">{project.title}</h2>
               </Link>
