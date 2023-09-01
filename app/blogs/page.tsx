@@ -21,7 +21,7 @@ const page = () => {
               className="flex flex-col max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg"
             >
               <Image
-                className="w-full h-auto"
+                className="w-full h-fit max-h-72"
                 src={post.image}
                 alt={post.title}
                 width={895}
