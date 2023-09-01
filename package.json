@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -88,5 +88,5 @@
       "prettier --write"
     ]
   },
-  "author": "emil (https://github.com/emilkovacevic)"
+  "author": "emil (https://themeforest.net/user/emilkovacevicdev)"
 }
