@@ -8,7 +8,7 @@ interface TagsCloudProps {
 
 const TagsCloud = ({ tags }: TagsCloudProps) => (
   <TagCloud
-    className="text-primary"
+    className="font-semibold text-accent-foreground"
     options={(w: Window & typeof globalThis): TagCloudOptions => ({
       radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
       maxSpeed: 'normal'

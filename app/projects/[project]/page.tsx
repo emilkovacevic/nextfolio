@@ -30,7 +30,9 @@ const page = () => {
           alt="cover photo"
           width={895}
           height={552}
-          className="w-full h-[450px] my-10 object-cover"
+          loading="lazy"
+          sizes="(max-wdith: 768px) 50vh, (max-wdith: 1200px) 30vh, 20vh"
+          className="object-cover w-full h-full my-10"
         />
       </div>
       <p data-aos="fade-right" className="mb-4">
@@ -41,6 +43,9 @@ const page = () => {
         <h2 data-aos="fade-up" className="my-10 text-2xl font-semibold">
           Featured Content
         </h2>
+        <p data-aos="fade-left" className="mb-4">
+          {project.description}
+        </p>
         <Swipper>
           {project.features.map((card) => (
             <div key={card.id} data-aos="fade-up" className="pb-10 mx-auto">
@@ -50,7 +55,8 @@ const page = () => {
                   alt={card.title}
                   width={895}
                   height={395}
-                  className="object-cover object-center w-full h-80"
+                  loading="lazy"
+                  className="object-cover object-center w-full h-full max-h-96"
                 />
                 <div className="absolute top-0 left-0 z-30 bottom-10 flex flex-col justify-center w-full h-full px-[10%] bg-black/60 text-white ">
                   <h3 className="mt-4 text-xl font-bold">{card.title}</h3>

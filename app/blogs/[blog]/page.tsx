@@ -32,6 +32,7 @@ const page = () => {
           <Image
             width={895}
             height={552}
+            loading="lazy"
             src={BLOG_ARTICLE_DATA.author.image}
             alt={BLOG_ARTICLE_DATA.author.name}
             className="w-10 h-10 rounded-full"
@@ -56,7 +57,8 @@ const page = () => {
               height={552}
               src={section.image}
               alt={`Illustration for ${section.title}`}
-              className="w-full mb-4 rounded-md"
+              loading="lazy"
+              className="w-full h-auto mb-4 rounded-md"
             />
           </section>
         ))}

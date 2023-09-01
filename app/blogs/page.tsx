@@ -18,16 +18,15 @@ const page = () => {
           {BLOG_PAGE_DATA.blogs.map((post) => (
             <section
               key={post.id}
-              data-aos="fade-up"
-              data-aos-once="true"
               className="flex flex-col max-w-md mx-auto overflow-hidden rounded shadow-md bg-card hover:shadow-lg"
             >
               <Image
-                className="w-full h-80"
+                className="w-full h-fit max-h-72"
                 src={post.image}
                 alt={post.title}
                 width={895}
                 height={552}
+                loading="lazy"
               />
 
               <div className="flex flex-col justify-between p-4 ">
