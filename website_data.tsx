@@ -242,7 +242,7 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 4,
-      image: PROJECT_SLIDE,
+      image: PROJECT,
       title: 'Project Name 4',
       description: PROJECT_DESC,
       features: [

@@ -84,7 +84,7 @@
   .swiper-custom-button-left,
   .swiper-custom-button-right {
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;

@@ -9,6 +9,7 @@ const CurriculumVitae = () => {
     <Dialog>
       <DialogTrigger asChild>
         <Button
+          aria-label="View Curriculum Vitae"
           title="View Curriculum Vitae"
           variant="link"
           className="w-full font-extrabold h-fit bg-primary dark:text-foreground text-card"

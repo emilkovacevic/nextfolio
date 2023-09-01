@@ -30,7 +30,8 @@ const page = () => {
           alt="cover photo"
           width={895}
           height={552}
-          className="w-full h-[450px] my-10 object-cover"
+          loading="lazy"
+          className="object-cover w-full h-auto my-10"
         />
       </div>
       <p data-aos="fade-right" className="mb-4">
@@ -50,7 +51,8 @@ const page = () => {
                   alt={card.title}
                   width={895}
                   height={395}
-                  className="object-cover object-center w-full h-80"
+                  loading="lazy"
+                  className="object-cover object-center w-full h-auto"
                 />
                 <div className="absolute top-0 left-0 z-30 bottom-10 flex flex-col justify-center w-full h-full px-[10%] bg-black/60 text-white ">
                   <h3 className="mt-4 text-xl font-bold">{card.title}</h3>

@@ -18,9 +18,10 @@ const page = () => {
             <Image
               width={300}
               height={300}
+              loading="eager"
               src={PROFILE_PAGE_DATA.image}
               alt={PROFILE_PAGE_DATA.name}
-              className="object-cover object-center w-full rounded-tl-sm h-80"
+              className="object-cover object-center w-full h-auto rounded-sm md:rounded-tl-sm"
             />
             <CurriculumVitae />
           </div>
@@ -141,10 +142,7 @@ const page = () => {
           ))}
         </section>
         <section className="mt-10 shadow-lg bg-card text-card-foreground">
-          <h2 className="p-8 my-2 text-4xl font-bold text-center">
-            What clients say?
-          </h2>
-          <Swipper>
+          <Swipper title="What clients say?">
             {TESTIMONIALS_DATA.map((data) => (
               <div
                 className="max-w-screen-xl px-[10%] py-8 mx-auto text-center lg:py-16 lg:px-6"
@@ -173,6 +171,7 @@ const page = () => {
                       height={450}
                       className="object-cover w-20 h-20 rounded-full"
                       src={data.image}
+                      loading="lazy"
                       alt={data.name}
                     />
                     <div className="flex items-center divide-x-2 divide-border">
