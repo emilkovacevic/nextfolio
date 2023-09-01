@@ -34,7 +34,7 @@ const page = () => {
                   alt={project.title}
                   width={800}
                   height={450}
-                  className="object-cover w-full h-full rounded-md max-h-96"
+                  className="object-cover w-full h-full rounded-md max-h-52"
                 />
                 <h2 className="mt-4 text-lg md:text-2xl">{project.title}</h2>
               </Link>
