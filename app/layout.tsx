@@ -28,7 +28,6 @@ export default function RootLayout({
       <body className={monserrat.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AOSInit />
-          <Analytics />
           <div className="relative flex flex-wrap min-h-screen ">
             <ClientOnly>
               <ProgressBar />
@@ -40,6 +39,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
