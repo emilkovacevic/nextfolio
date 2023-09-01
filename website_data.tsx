@@ -316,7 +316,7 @@ export const TESTIMONIALS_DATA = [
       "John's ability to grasp complex problems and provide innovative solutions is truly commendable. His dedication and passion for coding are evident in every project he handles.",
     name: 'Joe Smith',
     position: 'Director at Microsoft',
-    imageUrl:
+    image:
       'https://plus.unsplash.com/premium_photo-1669882305339-8e2cbb81903e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -325,7 +325,7 @@ export const TESTIMONIALS_DATA = [
       'John has been a pivotal part of our software development team. His coding skills and dedication to best practices are unmatched.',
     name: 'Robert Williams',
     position: 'CTO at Google',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -334,7 +334,7 @@ export const TESTIMONIALS_DATA = [
       "We've worked with John on multiple projects and he never fails to exceed our expectations. He has an uncanny ability to turn ideas into reality.",
     name: 'Amanda Johnson',
     position: 'VP of Engineering at Apple',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -343,7 +343,7 @@ export const TESTIMONIALS_DATA = [
       "It's rare to find a developer who combines expertise with great communication skills. John is one of those rare finds.",
     name: 'David Taylor',
     position: 'CEO at Dropbox',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -352,7 +352,7 @@ export const TESTIMONIALS_DATA = [
       "John consistently delivers top-notch code, meets deadlines, and is always eager to take on new challenges. It's a pleasure working with him.",
     name: 'Sam Brown',
     position: 'Product Manager at Spotify',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -361,7 +361,7 @@ export const TESTIMONIALS_DATA = [
       "I've witnessed John tackle intricate problems with ease, and he's a true asset to any development team.",
     name: 'Jenny Green',
     position: 'Senior Developer at Netflix',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -370,7 +370,7 @@ export const TESTIMONIALS_DATA = [
       "Every line of code John writes is testament to his profound understanding of programming. He's truly a software artisan.",
     name: 'Natalie White',
     position: 'Tech Lead at Adobe',
-    imageUrl:
+    image:
       'https://plus.unsplash.com/premium_photo-1688739352540-a75b102d8551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -379,7 +379,7 @@ export const TESTIMONIALS_DATA = [
       'Collaborating with John has been an enlightening experience. His approach to coding, combined with his commitment to team goals, is truly inspiring.',
     name: 'Brandon Harris',
     position: 'Engineering Manager at Slack',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -388,7 +388,7 @@ export const TESTIMONIALS_DATA = [
       'John is the kind of developer who leads by example. His depth of knowledge and relentless work ethic makes him a standout in the software world.',
     name: 'Oliver King',
     position: 'Head of Software at Nvidia',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
   },
   {
@@ -397,7 +397,7 @@ export const TESTIMONIALS_DATA = [
       'John has the technical prowess and the collaborative spirit that makes projects succeed. I wholeheartedly recommend him for any technical venture.',
     name: 'Maya Lewis',
     position: 'Founder & CEO at Zoom',
-    imageUrl:
+    image:
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
   }
 ]

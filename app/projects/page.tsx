@@ -13,7 +13,7 @@ const page = () => {
       />
 
       <main>
-        <div className="mx-auto  md:p-6">
+        <div className="mx-auto md:p-6">
           {/* Grid Layout for Projects */}
           <div
             className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
@@ -30,10 +30,11 @@ const page = () => {
                 {/* Image Section */}
                 <Image
                   src={project.image}
+                  loading="lazy"
                   alt={project.title}
                   width={800}
                   height={450}
-                  className="w-full h-56 rounded-md"
+                  className="object-cover w-full h-full rounded-md max-h-96"
                 />
                 <h2 className="mt-4 text-lg md:text-2xl">{project.title}</h2>
               </Link>
