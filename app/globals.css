@@ -79,6 +79,28 @@
     @apply bg-background text-foreground;
   }
 
+  /* Swipper buttons */
+  
+  .swiper-custom-button-left,
+  .swiper-custom-button-right {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .swiper-custom-button-left {
+    left: 10px;
+  }
+  
+  .swiper-custom-button-right {
+    right: 10px;
+  }
+  
   /* Home page styles */
   .zoom-in-out {
     animation: textInOutAnimation 1s ease-in-out;

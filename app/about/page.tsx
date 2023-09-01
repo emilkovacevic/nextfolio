@@ -172,7 +172,7 @@ const page = () => {
                       width={800}
                       height={450}
                       className="object-cover w-20 h-20 rounded-full"
-                      src={data.imageUrl}
+                      src={data.image}
                       alt={data.name}
                     />
                     <div className="flex items-center divide-x-2 divide-border">
