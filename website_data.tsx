@@ -47,7 +47,7 @@ export const HOME_PAGE_DATA = {
     {
       type: 'Address',
       value:
-        '123 East 123th Street, Murray Hill, New York, NY 10016, United States',
+        '123 East 123th Street, Murray Hill, NewYork, NY 10016, United States',
       link: 'https://www.google.com/maps/place/New+York,+NY,+USA/@40.7726383,-73.9919548,14z/data=!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu.'
     }
   ],

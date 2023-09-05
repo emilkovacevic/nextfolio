@@ -30,7 +30,7 @@ export default function Home() {
         </h2>
         <h1 className="max-w-4xl mb-4 text-2xl font-extrabold leading-relaxed tracking-wider break-words md:text-4xl xl:text-6xl text-secondary-foreground">
           {HOME_PAGE_DATA.role.map((word) => (
-            <div key={word.id} className="flex flex-wrap">
+            <span key={word.id} className="flex flex-wrap">
               {word.title.map((char) => (
                 <span
                   key={char.id}
@@ -41,7 +41,7 @@ export default function Home() {
                   {char.letter}
                 </span>
               ))}
-            </div>
+            </span>
           ))}
         </h1>
         <p

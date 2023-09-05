@@ -13,9 +13,9 @@ import { Toaster } from '@/components/ui/toaster'
 const monserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Portfolio Website',
-  description: 'Personal portfolio website',
-  keywords: 'next, react, developer, portfolio, design, hire, professional'
+  title: 'Portfolio Template',
+  description: 'Personal portfolio Template',
+  keywords: 'next, react, developer, portfolio, design, hire, professional, template',
 }
 
 export default function RootLayout({

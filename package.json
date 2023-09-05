@@ -87,6 +87,5 @@
       "eslint --fix",
       "prettier --write"
     ]
-  },
-  "author": "emil (https://github.com/emilkovacevic)"
+  }
 }
