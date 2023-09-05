@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className="min-h-screen py-6">
+    <div className="py-6">
       <PageHeader
         heading={PROFILE_PAGE_DATA.heading}
         subheading={PROFILE_PAGE_DATA.subheading}

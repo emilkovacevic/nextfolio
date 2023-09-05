@@ -55,11 +55,10 @@ export const HOME_PAGE_DATA = {
     'Pro',
     'Developer',
     'Responsive',
-    'Angular',
-    'React',
     'API',
-    'PhotoShop',
-    'Architect',
+    'Model',
+    'Theme',
+    'Template',
     'Art',
     'Git'
   ]

@@ -15,7 +15,8 @@ const monserrat = Montserrat({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Portfolio Template',
   description: 'Personal portfolio Template',
-  keywords: 'next, react, developer, portfolio, design, hire, professional, template',
+  keywords:
+    'next, react, developer, portfolio, design, hire, professional, template'
 }
 
 export default function RootLayout({
@@ -35,7 +36,7 @@ export default function RootLayout({
               <ScrollToTopButton />
               <Toaster />
             </ClientOnly>
-            <div className="container self-center p-2 my-12 md:pl-20 md:pr-20 grow">
+            <div className="container grow p-2 my-12 md:pl-20 md:pr-20 grow">
               {children}
             </div>
           </div>

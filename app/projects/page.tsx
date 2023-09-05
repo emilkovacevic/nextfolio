@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <div className="min-h-screen py-6">
+    <div className="py-6">
       {/*  Header: Projects  */}
       <PageHeader
         heading={PROJECT_PAGE_DATA.heading}

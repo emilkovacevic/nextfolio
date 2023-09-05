@@ -75,28 +75,25 @@ const Navbar = () => {
               </Tooltip>
             </li>
           ))}
-          <li className="hidden md:block">
-            <hr className="px-4 py-[1px] bg-border" />
-          </li>
           <li>
+            <ThemeToggle />
+          </li>
+          <li className="hidden md:block">
             <Tooltip>
               <TooltipTrigger asChild>
-                <ThemeToggle />
+                <Button
+                  aria-label="Toggle Navbar Position"
+                  variant="link"
+                  className="hover:text-accent-foreground focus:text-accent-foreground"
+                  onClick={() => setIsNavLeft((prev) => !prev)}
+                >
+                  <FlipHorizontal2 />
+                </Button>
               </TooltipTrigger>
               <TooltipContent className="absolute bottom-20 md:bottom-0 md:left-10">
-                <p>Change Colors</p>
+                <p>Toggle Navbar Position</p>
               </TooltipContent>
             </Tooltip>
-          </li>
-          <li className="hidden md:block">
-            <Button
-              aria-label="Toggle Navbar Position"
-              variant="link"
-              className="hover:text-accent-foreground focus:text-accent-foreground"
-              onClick={() => setIsNavLeft((prev) => !prev)}
-            >
-              <FlipHorizontal2 />
-            </Button>
           </li>
         </ul>
       </TooltipProvider>

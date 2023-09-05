@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 const ProjectPageLoader = () => {
   return (
-    <div className="min-h-screen py-6">
+    <div>
       {/* PageHeader Loader */}
       <div className="mb-8 text-center">
         <Skeleton className="w-1/2 h-12 mx-auto mt-6" />

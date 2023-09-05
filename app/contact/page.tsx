@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm'
 
 const page = () => {
   return (
-    <main className="min-h-screen py-6">
+    <main>
       <div className="mx-auto md:px-0">
         {/*  Header: Contact Me  */}
         <PageHeader
