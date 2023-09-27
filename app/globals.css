@@ -22,8 +22,8 @@
     --muted: 0 0% 90%;
     --muted-foreground: 210 15% 30%;
 
-    --accent: 240 36% 37%; 
-    --accent-foreground: 155 67% 45%; 
+    --accent: 240 36% 37%;
+    --accent-foreground: 155 67% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -35,9 +35,8 @@
   }
 
   .dark {
-
-    --background: 20 14% 10%; 
-    --foreground: 0 0% 85%; 
+    --background: 20 14% 10%;
+    --foreground: 0 0% 85%;
 
     --card: 24 10% 15%;
     --card-foreground: 0 0% 80%;
@@ -94,15 +93,14 @@
     cursor: pointer;
     z-index: 10;
   }
-  
+
   .swiper-custom-button-left {
     left: 10px;
   }
-  
+
   .swiper-custom-button-right {
     right: 10px;
   }
-  
 
   /* Home page styles */
   .zoom-in-out {

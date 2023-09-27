@@ -25,7 +25,7 @@ const page = () => {
               <Link
                 className="p-4 transition-shadow duration-300 rounded-md shadow-lg bg-card hover:shadow-xl"
                 key={project.id}
-                href={`/projects/${project.title}`}
+                href={`/projects/${project.url}`}
               >
                 {/* Image Section */}
                 <Image

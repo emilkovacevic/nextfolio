@@ -145,6 +145,7 @@ export const PROJECT_PAGE_DATA = {
   projects: [
     {
       id: 1,
+      url: 'project_1',
       image:
         'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1055&q=80',
       title: 'Project Name 1',
@@ -179,6 +180,7 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 2,
+      url: 'project_2',
       image:
         'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
       title: 'Project Name 2',
@@ -213,6 +215,7 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 3,
+      url: 'project_3',
       image:
         'https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
       title: 'Project Name 3',
@@ -247,6 +250,7 @@ export const PROJECT_PAGE_DATA = {
     },
     {
       id: 4,
+      url: 'project_4',
       image:
         'https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
       title: 'Project Name 4',
@@ -290,6 +294,7 @@ export const BLOG_PAGE_DATA = {
     {
       id: 1,
       published_on: '7.8.2023',
+      url: 'blog_1',
       image:
         'https://images.unsplash.com/photo-1682686581264-c47e25e61d95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60',
       title: 'Blog Post Title 1',
@@ -298,6 +303,7 @@ export const BLOG_PAGE_DATA = {
     },
     {
       id: 2,
+      url: 'blog_2',
       published_on: '10.10.2023',
       image:
         'https://images.unsplash.com/photo-1692970126004-862efac4da0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60',

@@ -1,32 +1,32 @@
 import Swipper from '@/components/Swipper'
 import Image from 'next/image'
-import { headers } from 'next/headers'
 import { PROJECT_PAGE_DATA } from '@/website_data'
 import { notFound } from 'next/navigation'
 
-const page = () => {
-  const headersList = headers()
-  const activePath = headersList.get('next-url')?.split('/').pop()
-  const projectName = decodeURIComponent(activePath || '')
-  const project = PROJECT_PAGE_DATA.projects.find(
-    (p) => p.title === projectName
+export default async function Page({
+  params
+}: {
+  params: { project: string }
+}) {
+  const Project = PROJECT_PAGE_DATA.projects.find(
+    (p) => p.url === params.project
   )
 
-  if (!project) {
+  if (!Project) {
     return notFound()
   }
 
   return (
     <main className="max-w-4xl mx-auto tracking-wider">
       <h1 data-aos="fade-right" className="mb-4 text-3xl font-bold">
-        {project.title}
+        {Project?.title}
       </h1>
       <p data-aos="fade-left" className="mb-4">
-        {project.description}
+        {Project?.description}
       </p>
       <div data-aos="zoom-in">
         <Image
-          src={project.image}
+          src={Project?.image}
           alt="cover photo"
           width={895}
           height={552}
@@ -36,7 +36,7 @@ const page = () => {
         />
       </div>
       <p data-aos="fade-right" className="mb-4">
-        {project.description}
+        {Project.description}
       </p>
 
       <div>
@@ -44,10 +44,10 @@ const page = () => {
           Featured Content
         </h2>
         <p data-aos="fade-left" className="mb-4">
-          {project.description}
+          {Project.description}
         </p>
         <Swipper>
-          {project.features.map((card) => (
+          {Project.features.map((card) => (
             <div key={card.id} data-aos="fade-up" className="pb-10 mx-auto">
               <div className="relative">
                 <Image
@@ -71,5 +71,3 @@ const page = () => {
     </main>
   )
 }
-
-export default page
